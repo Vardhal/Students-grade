@@ -27,6 +27,7 @@ class Course:
             
         return value / len(self.students)            
     
+
 s1 = Student("Masha", 5)
 s2 = Student("Pavel", 3)
 s3 = Student("Misha", 4)  
@@ -35,3 +36,4 @@ c = Course("Math", 2)
 c.add_student(s1)
 c.add_student(s2)
 print(c.average_grade())
+

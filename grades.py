@@ -15,7 +15,7 @@ class Course:
         self.students = []
         
     def add_student(self, student):
-        if len(student) < self.max_students:
+        if len(self.students) < self.max_students:
             self.students.append(student)
             return True
         return False
@@ -27,4 +27,11 @@ class Course:
             
         return value / len(self.students)            
     
-    
+s1 = Student("Masha", 5)
+s2 = Student("Pavel", 3)
+s3 = Student("Misha", 4)  
+
+c = Course("Math", 2)
+c.add_student(s1)
+c.add_student(s2)
+print(c.average_grade())
